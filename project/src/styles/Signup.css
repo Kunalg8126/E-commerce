@@ -1,0 +1,106 @@
+/* Center the card */
+.signup-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+}
+
+/* Box UI */
+.signup-card {
+  width: 380px;
+  padding: 30px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input group */
+.input-box {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  padding-left: 10px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.input-box input:focus {
+  border-color: #4b7bf7;
+}
+
+.input-box label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #777;
+  transition: 0.2s ease;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+  top: -6px;
+  background: white;
+  padding: 0 6px;
+  color: #4b7bf7;
+  font-size: 12px;
+}
+
+/* OTP Input */
+.otp-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.otp-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #4b7bf7;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background: #9cb4ff;
+  cursor: not-allowed;
+}
+
+/* Recaptcha box */
+.recaptcha-box {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}

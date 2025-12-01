@@ -1,0 +1,103 @@
+.about-container {
+  width: 100%;
+  padding: 40px 80px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* Hero section */
+.about-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Values section */
+.about-values h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.value-card {
+  flex: 1;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.value-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.value-card p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Story section */
+.about-story {
+  margin-top: 70px;
+}
+
+.about-story h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-story p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+/* Team section */
+.about-team {
+  margin-top: 70px;
+}
+
+.about-team h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-team p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .values-grid {
+    flex-direction: column;
+  }
+}

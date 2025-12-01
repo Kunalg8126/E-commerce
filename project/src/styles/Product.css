@@ -1,0 +1,18 @@
+.products-container {
+  padding: 40px 60px;
+  background: #f8f9fd;
+}
+
+.products-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2d2d2d;
+}
+
+.product-grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}

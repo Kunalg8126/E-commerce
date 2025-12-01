@@ -1,0 +1,209 @@
+/* ===========================
+   AI NAVBAR — CLEAN & MODERN
+   =========================== */
+.ai-navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(90deg, #eef6ff, #f3ebff);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+}
+
+/* Main navbar container */
+.nav-inner {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 12px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===========================
+   BRAND
+   =========================== */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.brand-icon {
+  font-size: 22px;
+}
+
+.brand-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.brand-text small {
+  color: #6b21a8;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+/* ===========================
+   DESKTOP NAV LINKS
+   =========================== */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-link {
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #0f172a;
+
+  transition: all 0.20s ease;
+}
+
+.nav-link:hover {
+  background: rgba(79, 70, 229, 0.08);
+  color: #4f46e5;
+  transform: translateY(-3px);
+}
+
+/* ===========================
+   RIGHT SIDE: CART + ACCOUNT
+   =========================== */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cart-btn {
+  position: relative;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #ef4444;
+  color: #fff;
+  font-weight: 700;
+}
+
+.account-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.07);
+  background: #fff;
+  cursor: pointer;
+}
+
+.account-text {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.logout-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+  color: #4f46e5;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* ===========================
+   MOBILE BUTTON
+   =========================== */
+.hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: none;
+}
+
+/* ===========================
+   MOBILE MENU
+   =========================== */
+.mobile-overlay {
+  background: rgba(243, 236, 255, 0.96);
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px 20px;
+  gap: 8px;
+}
+
+.mobile-link {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mobile-link:hover {
+  background: rgba(79, 70, 229, 0.08);
+}
+
+.mobile-link.logout {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+/* Tablets & Mobile */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .account-btn,
+  .logout-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 420px) {
+  .nav-inner {
+    padding: 10px 14px;
+  }
+  .brand-text {
+    font-size: 1.1rem;
+  }
+}
